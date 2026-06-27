@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { api, UserProfile, Deadline, SubTask, RecoveryPlan } from './services/api';
+import { api, UserProfile, Deadline, RecoveryPlan } from './services/api';
 
 export default function App() {
   const [deadlines, setDeadlines] = useState<Deadline[]>([]);
@@ -406,7 +406,7 @@ export default function App() {
                       <div className="glass-panel card">
                         <h4 className="card-title">Hourly Timeline</h4>
                         <div className="timeline-container">
-                          {selectedDeadline.subtasks && selectedDeadline.subtasks.filter(s => s.status !== 'skipped').map((task, idx) => (
+                          {selectedDeadline.subtasks && selectedDeadline.subtasks.filter(s => s.status !== 'skipped').map((task) => (
                             <div 
                               key={task.id} 
                               className="timeline-slot"
