@@ -1,0 +1,16 @@
+# Dependency Folders 
+node_modules/ 
+.node/ 
+
+# Enviroment Variables 
+.env 
+
+# Python Specific 
+__pycache__/ 
+*.pyc 
+*.pyo 
+
+# IDE/Editor Files 
+.vscode/ 
+.idea/ 
+.DS_Store 
